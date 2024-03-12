@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+    let media = parseInt(0)
+    let divisao = parseInt(0)
+
+    let num1 = parseInt(prompt("Digite o primeiro valor: "))
+    if (num1 > 0 && num1 <= 10) {
+      media += num1
+      divisao++
+    }
+    let num2 = parseInt(prompt("Digite o segundo valor: "))
+    if (num2 > 0 && num2 <= 10) {
+      media += num2
+      divisao++
+    }
+    let num3 = parseInt(prompt("Digite o terceiro valor: "))
+    if (num3 > 0 && num3 <= 10) {
+      media += num3
+      divisao++
+    }
+    let num4 = parseInt(prompt("Digite o quarto valor: "))
+    if (num4 > 0 && num4 <= 10) {
+      media += num4
+      divisao++
+    }
+
+    let resultado = media / divisao
+
+    if (resultado >= 5) {
+      alert("A sua nota foi: " + resultado + "\n" + "Voce passou no teste" )
+    } else {
+      alert("A sua nota foi: " + resultado + "\n" + "Voce reprovou no teste" )
+    }
+
+
+  </script>
+</body>
+</html>

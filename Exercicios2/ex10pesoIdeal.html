@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+    let genero = parseInt(prompt("Digite seu genero: " + "\n" + "Feminino: 1" + "\n" + "Masculino: 2"))
+
+    let altura = parseFloat(prompt("Digite sua altura em cm: " + "\n" + "Exemplo: 1.70"))
+
+    let pesoIdealF = (62.1 * altura) - 44.7
+    let pesoIdealM = (72.7 * altura) - 58
+
+    if (genero == 1 ){
+      alert("Peso Ideal para sua altura: " + pesoIdealF)
+    }
+    if (genero == 2 ){
+      alert("Peso Ideal para sua altura: " + pesoIdealM)
+    }
+
+
+  </script>
+</body>
+</html>

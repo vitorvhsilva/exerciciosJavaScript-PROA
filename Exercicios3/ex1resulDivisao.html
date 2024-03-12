@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+    let loop = true
+
+    let num1 = parseInt(prompt("Digite o primeiro valor: "))
+    let num2 = parseInt(prompt("Digite o segundo valor: "))
+    while (num2 <= 0 && loop == true) {
+      let num2 = parseInt(prompt("Digite o segundo valor: "))
+      if (num2 >= 1) {
+        loop = false
+      }
+    }
+
+    let resultado = num1 / num2 
+
+    alert("O resultado e: " + resultado)
+    console.log("O resultado e: " + resultado)
+
+
+  </script>
+</body>
+</html>

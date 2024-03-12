@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+    let loop = true
+
+    while (loop == true) {
+      let num1 = parseFloat(prompt("Digite o primeiro numero: "))
+      let num2 = parseFloat(prompt("Digite o segundo numero: "))
+
+      let media = (num1 + num2) / 2
+
+      if (media >= 9.5) {
+        alert("Aprovado")
+      }
+      if (media < 9.5) {
+        alert("Reprovado")
+      }
+
+      let continuar = prompt("Continuar? S ou N: ")
+
+      if (continuar == "S" || continuar == "s") {
+        loop = true
+      } else if (continuar == "N" || continuar == "n") {
+        loop = false
+      } else {
+        alert("Comando Errado")
+      }
+    }
+
+
+  </script>
+</body>
+</html>
