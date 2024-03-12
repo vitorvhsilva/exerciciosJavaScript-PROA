@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+    let soma = 0
+
+    for (let i = 1; i <= 6; i++) {
+
+      let num = {}
+
+      let loop = true
+
+      num[i] = parseFloat(prompt("Digite o " + [i] + " numero: "))
+      while ((num[i] < 0 || num[i] > 10) && loop == true) {
+        num[i] = parseFloat(prompt("Digite o " + [i] + " numero: "))
+        if (num[i] >= 0 && num[i] <= 10) {
+          loop = false
+        }
+      }
+      soma += num[i]
+
+    }
+
+    let media = soma / 6
+
+    alert("A media do aluno e: " + media)
+
+  </script>
+</body>
+</html>
