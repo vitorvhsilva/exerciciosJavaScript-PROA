@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+    let listaEst = []
+
+    let loop = true
+
+    while (loop == true) {
+      for (let i = 0; loop == true; i++) {
+        listaEst[i] = prompt("Digite o nome do estudante: ")
+
+        if (listaEst[i] == "PARE") {
+          loop = false
+          console.log(listaEst)
+          alert(listaEst + ", Numero de Estudantes: " + listaEst.length)
+        } 
+      }
+    }
+
+    listaEst = {}
+
+  </script>
+</body>
+</html>
