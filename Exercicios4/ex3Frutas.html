@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+    let frutas = ["Maçã", "Banana", "Laranja", "Uva", "Melancia"]
+
+    console.log(frutas.length)
+
+    while (frutas.length > 0) {
+
+      let fruta = prompt("Digite o nome de uma das frutas: ")
+
+      if (frutas.includes(fruta)) {
+        frutas.pop(fruta);
+        alert("A " + fruta + " foi removida da lista")
+      } else {
+        alert("A " + fruta + " nao existe na lista")
+      }
+    }
+
+  </script>
+</body>
+</html>
