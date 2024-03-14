@@ -10,20 +10,28 @@
 
   <script>
 
-    let frutas = ["Maçã", "Banana", "Laranja", "Uva", "Melancia"]
+    let frutas = ["Uva", "Banana"]
 
-    console.log(frutas.length)
+    let loop = true
 
-    while (frutas.length > 0) {
+    while (loop == true) {
 
       let fruta = prompt("Digite o nome de uma das frutas: ")
 
-      if (frutas.includes(fruta)) {
-        frutas.pop(fruta);
-        alert("A " + fruta + " foi removida da lista")
+      let index = frutas.indexOf(fruta)
+
+      if (index > -1) {
+        frutas.splice(index, 1);
+        alert("A fruta foi removida da lista")
       } else {
-        alert("A " + fruta + " nao existe na lista")
+        alert("A fruta nao existe na lista")
       }
+      
+      if (frutas.length < 1) {
+        alert("Lista de compras finalizada")
+        loop = false
+      }
+
     }
 
   </script>
